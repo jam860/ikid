@@ -31,11 +31,11 @@
             <objects>
                 <viewController id="JCj-5Q-6vb" customClass="ViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="phl-vb-F0d">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="757"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNO-tU-DHG">
-                                <rect key="frame" x="130.5" y="445.5" width="59.5" height="34.5"/>
+                                <rect key="frame" x="312.33333333333331" y="683.66666666666663" width="59.666666666666686" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next"/>
                                 <connections>
@@ -43,23 +43,27 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="j4m-Z0-SX1">
-                                <rect key="frame" x="22" y="281.5" width="276" height="20.5"/>
+                                <rect key="frame" x="57.333333333333343" y="442.33333333333331" width="287.33333333333326" height="40.666666666666686"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why did the chicken cross the road?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDm-qg-p8z">
-                                        <rect key="frame" x="0.0" y="0.0" width="276" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who has let me down the most in life?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDm-qg-p8z">
+                                        <rect key="frame" x="0.0" y="0.0" width="287.33333333333331" height="40.666666666666664"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="EDm-qg-p8z" firstAttribute="leading" secondItem="j4m-Z0-SX1" secondAttribute="leading" id="mh8-LN-QV5"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="p2e-ax-xoF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="p2e-ax-xoF" firstAttribute="trailing" secondItem="YNO-tU-DHG" secondAttribute="trailing" constant="30" id="2ug-eU-0Ep"/>
                             <constraint firstItem="j4m-Z0-SX1" firstAttribute="centerY" secondItem="p2e-ax-xoF" secondAttribute="centerY" id="5OC-ZS-KGB"/>
                             <constraint firstItem="j4m-Z0-SX1" firstAttribute="centerX" secondItem="phl-vb-F0d" secondAttribute="centerX" id="6hP-ow-IhK"/>
-                            <constraint firstItem="YNO-tU-DHG" firstAttribute="centerX" secondItem="phl-vb-F0d" secondAttribute="centerX" id="SPX-1W-Z48"/>
+                            <constraint firstItem="j4m-Z0-SX1" firstAttribute="leading" secondItem="p2e-ax-xoF" secondAttribute="leading" constant="57.329999999999998" id="79i-Jc-Fcq"/>
                             <constraint firstItem="p2e-ax-xoF" firstAttribute="bottom" secondItem="YNO-tU-DHG" secondAttribute="bottom" constant="39" id="sj1-W8-DXc"/>
                         </constraints>
                     </view>
@@ -74,11 +78,11 @@
             <objects>
                 <viewController id="4nO-Bb-0dw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h36-BV-Ort">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="757"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOL IDK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49G-Oc-xgX">
-                                <rect key="frame" x="129" y="249" width="62" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My INFO Teammates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49G-Oc-xgX">
+                                <rect key="frame" x="121.66666666666669" y="452" width="159" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -87,7 +91,7 @@
                         <viewLayoutGuide key="safeArea" id="zvl-vz-Mf0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="49G-Oc-xgX" firstAttribute="centerY" secondItem="h36-BV-Ort" secondAttribute="centerY" id="60W-xt-txC"/>
+                            <constraint firstItem="49G-Oc-xgX" firstAttribute="centerY" secondItem="zvl-vz-Mf0" secondAttribute="centerY" id="60W-xt-txC"/>
                             <constraint firstItem="49G-Oc-xgX" firstAttribute="centerX" secondItem="h36-BV-Ort" secondAttribute="centerX" id="noz-AZ-7DR"/>
                         </constraints>
                     </view>
@@ -120,7 +124,7 @@
                 <navigationController id="mMq-p9-AOU" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Pun Joke" id="aeL-lr-Bhg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="M0V-qI-Syb">
-                        <rect key="frame" x="0.0" y="124" width="440" height="44"/>
+                        <rect key="frame" x="0.0" y="124" width="402" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -137,7 +141,7 @@
                 <navigationController id="xOT-xy-xGj" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Dad Joke" id="yLC-aE-odo"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JHO-q9-oZk">
-                        <rect key="frame" x="0.0" y="124" width="440" height="44"/>
+                        <rect key="frame" x="0.0" y="124" width="402" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -153,22 +157,22 @@
             <objects>
                 <viewController id="aB5-eb-Sub" customClass="ViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kgx-09-141">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="757"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcM-wR-uC7">
-                                <rect key="frame" x="130.5" y="445.5" width="59.5" height="34.5"/>
+                                <rect key="frame" x="312.33333333333326" y="683.66666666666663" width="59.666666666666742" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next"/>
                                 <connections>
                                     <segue destination="0ZZ-fs-dSk" kind="show" id="AD9-r7-rpf"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JUQ-nc-9R0">
-                                <rect key="frame" x="22" y="281.5" width="276" height="20.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vlg-c5-t3A">
+                                <rect key="frame" x="40" y="442.33333333333331" width="322" height="40.666666666666686"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why did the chicken cross the road?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynC-Vt-QaJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="276" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Everyone said Spongebob Squarepants was the protagonist of the show..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="ynC-Vt-QaJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="322" height="40.666666666666664"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -179,9 +183,10 @@
                         <viewLayoutGuide key="safeArea" id="pLI-p9-xRy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="xcM-wR-uC7" firstAttribute="centerX" secondItem="kgx-09-141" secondAttribute="centerX" id="7BG-J1-5Fp"/>
-                            <constraint firstItem="JUQ-nc-9R0" firstAttribute="centerX" secondItem="kgx-09-141" secondAttribute="centerX" id="VbF-Ss-xPg"/>
-                            <constraint firstItem="JUQ-nc-9R0" firstAttribute="centerY" secondItem="pLI-p9-xRy" secondAttribute="centerY" id="cfC-02-lFe"/>
+                            <constraint firstItem="pLI-p9-xRy" firstAttribute="trailing" secondItem="xcM-wR-uC7" secondAttribute="trailing" constant="30" id="13W-vS-IQs"/>
+                            <constraint firstItem="vlg-c5-t3A" firstAttribute="centerY" secondItem="pLI-p9-xRy" secondAttribute="centerY" id="1ar-ui-Qv8"/>
+                            <constraint firstItem="vlg-c5-t3A" firstAttribute="leading" secondItem="kgx-09-141" secondAttribute="leading" constant="40" id="2vj-cb-gUN"/>
+                            <constraint firstItem="vlg-c5-t3A" firstAttribute="centerX" secondItem="kgx-09-141" secondAttribute="centerX" id="Clq-KI-USE"/>
                             <constraint firstItem="pLI-p9-xRy" firstAttribute="bottom" secondItem="xcM-wR-uC7" secondAttribute="bottom" constant="39" id="l6u-vC-08r"/>
                         </constraints>
                     </view>
@@ -189,18 +194,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4SZ-0X-09J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-582" y="1085"/>
+            <point key="canvasLocation" x="-582.08955223880594" y="1082.6086956521738"/>
         </scene>
         <!--Dad Joke-->
         <scene sceneID="Zec-rv-Gjb">
             <objects>
                 <viewController id="MzL-Pa-e5c" customClass="ViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BMX-8Q-dwc">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="757"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkq-vC-fH7">
-                                <rect key="frame" x="130.5" y="445.5" width="59.5" height="34.5"/>
+                                <rect key="frame" x="312.33333333333326" y="683.66666666666663" width="59.666666666666742" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next"/>
                                 <connections>
@@ -208,10 +213,10 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6Co-7v-FIq">
-                                <rect key="frame" x="22" y="281.5" width="276" height="20.5"/>
+                                <rect key="frame" x="44" y="452.33333333333331" width="314" height="20.333333333333314"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why did the chicken cross the road?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zkv-QQ-92n">
-                                        <rect key="frame" x="0.0" y="0.0" width="276" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="People say I look better without glasses..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zkv-QQ-92n">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -222,9 +227,10 @@
                         <viewLayoutGuide key="safeArea" id="sar-sP-tG0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="sar-sP-tG0" firstAttribute="trailing" secondItem="gkq-vC-fH7" secondAttribute="trailing" constant="30" id="3Qu-pW-Kq0"/>
+                            <constraint firstItem="6Co-7v-FIq" firstAttribute="leading" secondItem="sar-sP-tG0" secondAttribute="leading" constant="44" id="Lhs-Hd-XFZ"/>
                             <constraint firstItem="6Co-7v-FIq" firstAttribute="centerY" secondItem="sar-sP-tG0" secondAttribute="centerY" id="O5u-qO-oaG"/>
                             <constraint firstItem="6Co-7v-FIq" firstAttribute="centerX" secondItem="BMX-8Q-dwc" secondAttribute="centerX" id="OMl-cR-yFo"/>
-                            <constraint firstItem="gkq-vC-fH7" firstAttribute="centerX" secondItem="BMX-8Q-dwc" secondAttribute="centerX" id="exr-ss-YWO"/>
                             <constraint firstItem="sar-sP-tG0" firstAttribute="bottom" secondItem="gkq-vC-fH7" secondAttribute="bottom" constant="39" id="qet-SN-Eh5"/>
                         </constraints>
                     </view>
@@ -239,11 +245,11 @@
             <objects>
                 <viewController id="0ZZ-fs-dSk" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Edc-vw-LYG">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="757"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOL IDK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Net-xC-Tsf">
-                                <rect key="frame" x="129" y="249" width="62" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="But the real star was Patrick" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Net-xC-Tsf">
+                                <rect key="frame" x="95" y="452" width="212" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -252,7 +258,7 @@
                         <viewLayoutGuide key="safeArea" id="z9E-3X-Luw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Net-xC-Tsf" firstAttribute="centerY" secondItem="Edc-vw-LYG" secondAttribute="centerY" id="1ir-Qu-2kH"/>
+                            <constraint firstItem="Net-xC-Tsf" firstAttribute="centerY" secondItem="z9E-3X-Luw" secondAttribute="centerY" id="1ir-Qu-2kH"/>
                             <constraint firstItem="Net-xC-Tsf" firstAttribute="centerX" secondItem="Edc-vw-LYG" secondAttribute="centerX" id="ILC-dE-js5"/>
                         </constraints>
                     </view>
@@ -267,11 +273,11 @@
             <objects>
                 <viewController id="q0p-NQ-r8A" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9PX-vJ-1Tv">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="757"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOL IDK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKh-fm-7ab">
-                                <rect key="frame" x="129" y="249" width="62" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="But I just can't see it... :(" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKh-fm-7ab">
+                                <rect key="frame" x="109.66666666666669" y="452" width="183" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -281,7 +287,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="aKh-fm-7ab" firstAttribute="centerX" secondItem="9PX-vJ-1Tv" secondAttribute="centerX" id="36Z-wF-D9m"/>
-                            <constraint firstItem="aKh-fm-7ab" firstAttribute="centerY" secondItem="9PX-vJ-1Tv" secondAttribute="centerY" id="8sg-RN-EUQ"/>
+                            <constraint firstItem="aKh-fm-7ab" firstAttribute="centerY" secondItem="adV-rx-Vee" secondAttribute="centerY" id="8sg-RN-EUQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NHX-t6-P8A"/>
