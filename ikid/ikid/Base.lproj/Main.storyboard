@@ -39,7 +39,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next"/>
                                 <connections>
-                                    <segue destination="4nO-Bb-0dw" kind="show" id="TcD-8M-vqQ"/>
+                                    <action selector="goodTapButton:" destination="JCj-5Q-6vb" eventType="touchUpInside" id="u2T-Kk-GiR"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="j4m-Z0-SX1">
@@ -68,6 +68,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Good Joke" id="9k8-vP-EuQ"/>
+                    <connections>
+                        <outlet property="goodJokeLabel" destination="EDm-qg-p8z" id="6g7-uc-3Yw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nir-DE-GK3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -78,11 +81,11 @@
             <objects>
                 <viewController id="4nO-Bb-0dw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h36-BV-Ort">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="757"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My INFO Teammates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49G-Oc-xgX">
-                                <rect key="frame" x="121.66666666666669" y="452" width="159" height="21"/>
+                                <rect key="frame" x="121.66666666666669" y="454.66666666666669" width="159" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -161,11 +164,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcM-wR-uC7">
-                                <rect key="frame" x="312.33333333333326" y="683.66666666666663" width="59.666666666666742" height="34.333333333333371"/>
+                                <rect key="frame" x="312.33333333333331" y="683.66666666666663" width="59.666666666666686" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next"/>
                                 <connections>
-                                    <segue destination="0ZZ-fs-dSk" kind="show" id="AD9-r7-rpf"/>
+                                    <action selector="punTapButton:" destination="aB5-eb-Sub" eventType="touchUpInside" id="Zmw-V8-bDW"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vlg-c5-t3A">
@@ -191,6 +194,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Pun Joke" id="O8Z-5x-Ci0"/>
+                    <connections>
+                        <outlet property="punJokeLabel" destination="ynC-Vt-QaJ" id="HZc-Xd-5oj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4SZ-0X-09J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -205,12 +211,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkq-vC-fH7">
-                                <rect key="frame" x="312.33333333333326" y="683.66666666666663" width="59.666666666666742" height="34.333333333333371"/>
+                                <rect key="frame" x="312.33333333333331" y="683.66666666666663" width="59.666666666666686" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next"/>
-                                <connections>
-                                    <segue destination="q0p-NQ-r8A" kind="show" id="HgX-Hk-pxr"/>
-                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6Co-7v-FIq">
                                 <rect key="frame" x="44" y="452.33333333333331" width="314" height="20.333333333333314"/>
@@ -235,6 +238,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Dad Joke" id="HiK-so-8nB"/>
+                    <connections>
+                        <outlet property="dadJokeLabel" destination="Zkv-QQ-92n" id="KBH-fb-87b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VN4-a9-8dQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -245,11 +251,11 @@
             <objects>
                 <viewController id="0ZZ-fs-dSk" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Edc-vw-LYG">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="757"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="But the real star was Patrick" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Net-xC-Tsf">
-                                <rect key="frame" x="95" y="452" width="212" height="21"/>
+                                <rect key="frame" x="95" y="454.66666666666669" width="212" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -273,11 +279,11 @@
             <objects>
                 <viewController id="q0p-NQ-r8A" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9PX-vJ-1Tv">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="757"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="But I just can't see it... :(" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKh-fm-7ab">
-                                <rect key="frame" x="109.66666666666669" y="452" width="183" height="21"/>
+                                <rect key="frame" x="109.66666666666669" y="454.66666666666669" width="183" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
