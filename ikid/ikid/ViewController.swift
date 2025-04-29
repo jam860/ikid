@@ -21,33 +21,61 @@ class ViewController: UIViewController {
     }
     
     @IBAction func goodTapButton(_ sender: UIButton) {
-        if sender.titleLabel?.text == "Next" {
-            sender.setTitle("Back", for: .normal)
-            goodJokeLabel.text = "My INFO Teammates"
-        } else if sender.titleLabel?.text == "Back"  {
-            sender.setTitle("Next", for: .normal)
-            goodJokeLabel.text = "Who has let me down the most in life?"
-        }
+//        if sender.titleLabel?.text == "Next" {
+//            sender.setTitle("Back", for: .normal)
+//            goodJokeLabel.text = "My INFO Teammates"
+//        } else if sender.titleLabel?.text == "Back"  {
+//            sender.setTitle("Next", for: .normal)
+//            goodJokeLabel.text = "Who has let me down the most in life?"
+//        }
+        UIView.transition(with: goodJokeLabel, duration: 0.5, options: .transitionFlipFromLeft, animations: {
+                if sender.titleLabel?.text == "Next" {
+                    sender.setTitle("Back", for: .normal)
+                    self.goodJokeLabel.text = "My INFO Teammates"
+                } else if sender.titleLabel?.text == "Back" {
+                    sender.setTitle("Next", for: .normal)
+                    self.goodJokeLabel.text = "Who has let me down the most in life?"
+                }
+            }, completion: nil)
     }
     
     @IBAction func punTapButton(_ sender: UIButton) {
-        if sender.titleLabel?.text == "Next" {
-            sender.setTitle("Back", for: .normal)
-            punJokeLabel.text = "But the real star was Patrick"
-        } else if sender.titleLabel?.text == "Back"  {
-            sender.setTitle("Next", for: .normal)
-            punJokeLabel.text = "Everyone said Spongebob Squarepants was the protagonist of the show..."
-        }
+//        if sender.titleLabel?.text == "Next" {
+//            sender.setTitle("Back", for: .normal)
+//            punJokeLabel.text = "But the real star was Patrick"
+//        } else if sender.titleLabel?.text == "Back"  {
+//            sender.setTitle("Next", for: .normal)
+//            punJokeLabel.text = "Everyone said Spongebob Squarepants was the protagonist of the show..."
+//        }
+        UIView.transition(with: punJokeLabel, duration: 0.5, options: .transitionFlipFromLeft, animations: {
+            if sender.titleLabel?.text == "Next" {
+                sender.setTitle("Back", for: .normal)
+                self.punJokeLabel.text = "But the real star was Patrick"
+            } else if sender.titleLabel?.text == "Back" {
+                sender.setTitle("Next", for: .normal)
+                self.punJokeLabel.text = "Everyone said Spongebob Squarepants was the protagonist of the show..."
+            }
+        }, completion: nil)
     }
     
     @IBAction func dadTapButton(_ sender: UIButton) {
-        if sender.titleLabel?.text == "Next" {
-            sender.setTitle("Back", for: .normal)
-            dadJokeLabel.text = "But I just can't see it... :("
-        } else if sender.titleLabel?.text == "Back"  {
-            sender.setTitle("Next", for: .normal)
-            dadJokeLabel.text = "People say I look better without glasses..."
-        }
+//        if sender.titleLabel?.text == "Next" {
+//            sender.setTitle("Back", for: .normal)
+//            dadJokeLabel.text = "But I just can't see it... :("
+//        } else if sender.titleLabel?.text == "Back"  {
+//            sender.setTitle("Next", for: .normal)
+//            dadJokeLabel.text = "People say I look better without glasses..."
+//        }
+        UIView.transition(with: dadJokeLabel, duration: 0.5, options:
+                .transitionFlipFromLeft, animations: {
+                    if sender.titleLabel?.text == "Next" {
+                        sender.setTitle("Back", for: .normal)
+                        self.dadJokeLabel.text = "But I just can't see it... :("
+                    } else if sender.titleLabel?.text == "Back"  {
+                        sender.setTitle("Next", for: .normal)
+                        self.dadJokeLabel.text = "People say I look better without glasses..."
+                            }
+                }, completion: nil)
     }
     
     @IBAction func knockTapButton(_ sender: UIButton) {

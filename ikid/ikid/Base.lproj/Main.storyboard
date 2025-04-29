@@ -17,15 +17,15 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </tabBar>
                     <connections>
-                        <segue destination="wGh-NL-kZ3" kind="relationship" relationship="viewControllers" id="Duq-TJ-4Ox"/>
-                        <segue destination="mMq-p9-AOU" kind="relationship" relationship="viewControllers" id="Oc6-T9-HMH"/>
-                        <segue destination="xOT-xy-xGj" kind="relationship" relationship="viewControllers" id="L5b-g7-Isf"/>
-                        <segue destination="mKP-GB-Hw1" kind="relationship" relationship="viewControllers" id="oho-IT-CN1"/>
+                        <segue destination="JCj-5Q-6vb" kind="relationship" relationship="viewControllers" id="RqE-79-MP8"/>
+                        <segue destination="aB5-eb-Sub" kind="relationship" relationship="viewControllers" id="0ht-T4-tuU"/>
+                        <segue destination="MzL-Pa-e5c" kind="relationship" relationship="viewControllers" id="afb-1S-TqK"/>
+                        <segue destination="17G-NY-JwQ" kind="relationship" relationship="viewControllers" id="QeJ-bc-A7y"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FQ2-Gk-BgT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-602" y="-361"/>
+            <point key="canvasLocation" x="-245" y="-380"/>
         </scene>
         <!--Good Joke-->
         <scene sceneID="f44-nm-fub">
@@ -44,7 +44,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="j4m-Z0-SX1">
-                                <rect key="frame" x="57.333333333333343" y="442.33333333333331" width="287.33333333333326" height="40.666666666666686"/>
+                                <rect key="frame" x="57.333333333333343" y="420.33333333333331" width="287.33333333333326" height="40.666666666666686"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who has let me down the most in life?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDm-qg-p8z">
                                         <rect key="frame" x="0.0" y="0.0" width="287.33333333333331" height="40.666666666666664"/>
@@ -68,6 +68,7 @@
                             <constraint firstItem="p2e-ax-xoF" firstAttribute="bottom" secondItem="YNO-tU-DHG" secondAttribute="bottom" constant="39" id="sj1-W8-DXc"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Good" id="eRr-PZ-4pR"/>
                     <navigationItem key="navigationItem" title="Good Joke" id="9k8-vP-EuQ"/>
                     <connections>
                         <outlet property="goodJokeLabel" destination="EDm-qg-p8z" id="6g7-uc-3Yw"/>
@@ -75,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nir-DE-GK3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1295.4198473282443" y="1084.5070422535211"/>
+            <point key="canvasLocation" x="-1355" y="365"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gjp-W0-wEH">
@@ -105,74 +106,6 @@
             </objects>
             <point key="canvasLocation" x="-1295" y="1814"/>
         </scene>
-        <!--Good-->
-        <scene sceneID="WF0-sh-gm6">
-            <objects>
-                <navigationController id="wGh-NL-kZ3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Good" id="i2n-ba-L3p"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ww7-qF-0q2">
-                        <rect key="frame" x="0.0" y="124" width="402" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="JCj-5Q-6vb" kind="relationship" relationship="rootViewController" id="bqr-LA-USJ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mz0-cg-Cav" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1293" y="372"/>
-        </scene>
-        <!--Pun-->
-        <scene sceneID="Fw9-gf-XG2">
-            <objects>
-                <navigationController id="mMq-p9-AOU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Pun" id="aeL-lr-Bhg"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M0V-qI-Syb">
-                        <rect key="frame" x="0.0" y="124" width="402" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="aB5-eb-Sub" kind="relationship" relationship="rootViewController" id="GVu-2s-UR4"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oSg-uT-FFZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-582" y="372"/>
-        </scene>
-        <!--Dad-->
-        <scene sceneID="DCy-cF-MsP">
-            <objects>
-                <navigationController id="xOT-xy-xGj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Dad" id="yLC-aE-odo"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JHO-q9-oZk">
-                        <rect key="frame" x="0.0" y="124" width="402" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="MzL-Pa-e5c" kind="relationship" relationship="rootViewController" id="0TY-ht-c5L"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n9h-HJ-LcM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="140" y="372"/>
-        </scene>
-        <!--Knock-Knock-->
-        <scene sceneID="bGH-3E-bJo">
-            <objects>
-                <navigationController id="mKP-GB-Hw1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Knock-Knock" id="teV-ZD-yqW"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CiS-rM-IjZ">
-                        <rect key="frame" x="0.0" y="124" width="402" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="17G-NY-JwQ" kind="relationship" relationship="rootViewController" id="sWf-9X-06N"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TOW-w4-DsN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="904" y="371"/>
-        </scene>
         <!--Pun Joke-->
         <scene sceneID="bsx-Ll-kNy">
             <objects>
@@ -190,7 +123,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vlg-c5-t3A">
-                                <rect key="frame" x="40" y="442.33333333333331" width="322" height="40.666666666666686"/>
+                                <rect key="frame" x="40" y="420.33333333333331" width="322" height="40.666666666666686"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Everyone said Spongebob Squarepants was the protagonist of the show..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="ynC-Vt-QaJ">
                                         <rect key="frame" x="0.0" y="0.0" width="322" height="40.666666666666664"/>
@@ -211,6 +144,7 @@
                             <constraint firstItem="pLI-p9-xRy" firstAttribute="bottom" secondItem="xcM-wR-uC7" secondAttribute="bottom" constant="39" id="l6u-vC-08r"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Pun" id="ayr-2e-agZ"/>
                     <navigationItem key="navigationItem" title="Pun Joke" id="O8Z-5x-Ci0"/>
                     <connections>
                         <outlet property="punJokeLabel" destination="ynC-Vt-QaJ" id="HZc-Xd-5oj"/>
@@ -218,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4SZ-0X-09J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-582.08955223880594" y="1082.6086956521738"/>
+            <point key="canvasLocation" x="-603" y="365"/>
         </scene>
         <!--Dad Joke-->
         <scene sceneID="Zec-rv-Gjb">
@@ -237,7 +171,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6Co-7v-FIq">
-                                <rect key="frame" x="44" y="452.33333333333331" width="314" height="20.333333333333314"/>
+                                <rect key="frame" x="44" y="430.33333333333331" width="314" height="20.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="People say I look better without glasses..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zkv-QQ-92n">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="20.333333333333332"/>
@@ -258,6 +192,7 @@
                             <constraint firstItem="sar-sP-tG0" firstAttribute="bottom" secondItem="gkq-vC-fH7" secondAttribute="bottom" constant="39" id="qet-SN-Eh5"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Dad" id="Gk0-6f-yRP"/>
                     <navigationItem key="navigationItem" title="Dad Joke" id="HiK-so-8nB"/>
                     <connections>
                         <outlet property="dadJokeLabel" destination="Zkv-QQ-92n" id="KBH-fb-87b"/>
@@ -265,7 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VN4-a9-8dQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="1085"/>
+            <point key="canvasLocation" x="166" y="365"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HQF-oi-SVn">
@@ -340,7 +275,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VFk-TN-mof">
-                                <rect key="frame" x="44" y="452.33333333333331" width="314" height="20.333333333333314"/>
+                                <rect key="frame" x="44" y="430.33333333333331" width="314" height="20.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knock Knock!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glv-P3-12N">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="20.333333333333332"/>
@@ -361,6 +296,7 @@
                             <constraint firstItem="VFk-TN-mof" firstAttribute="centerX" secondItem="h5K-Kj-Uyi" secondAttribute="centerX" id="i6b-n5-6Qa"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Knock-Knock" id="Af7-e8-7uK"/>
                     <navigationItem key="navigationItem" title="Knock-Knock Joke" id="66E-7g-72O"/>
                     <connections>
                         <outlet property="knockKnockJokeLabel" destination="glv-P3-12N" id="XgD-Nh-awl"/>
@@ -368,7 +304,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r26-Gs-8ja" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="903" y="1085"/>
+            <point key="canvasLocation" x="966" y="365"/>
         </scene>
     </scenes>
     <resources>
